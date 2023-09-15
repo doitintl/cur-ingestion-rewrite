@@ -114,7 +114,7 @@ class Aws:
 
             self.write_file_to_s3(destination_bucket, new_manifest_file, json.dumps(manifest_json, indent=4, sort_keys=True))
 
-            print(f'Successfully transformed manifest file {manifest_file}')
+            print(f'Successfully transformed manifest file {new_manifest_file}')
 
             return True
         except Exception as e:
