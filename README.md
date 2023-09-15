@@ -18,29 +18,46 @@ destination_cur_path = ("Enter destination CUR path: ") Mimic our DoiT bucket fo
 From the EC2 instance prompt run 
 
 $python3 main.py
+
 ##IT WILL PROMPT FOR ABOVE PARAMETERS. PROVIDE THE DETAILS.
+
 Enter source bucket name: cur-awsbackfill-bucket
+
 Enter destination bucket name: doitintl-awsops-1234-edit
+
 Enter source CUR path: billing/test1234-cost-report/
+
 Enter source CUR path to exclude (if any): 
+
 Enter destination CUR path: CUR/doitintl-awsops-1234/
 
+
 Sample output:
-Changing the reportkeys and manifest file name
+
+**Changing the reportkeys and manifest file name**
+
 Updated Report Keys: ['CUR/doitintl-awsops-1234/20220801-20220901/20230825T094827Z/doitintl-awsops-1234-00001.csv.gz', 'CUR/doitintl-awsops-1234/20220801-20220901/20230825T094827Z/doitintl-awsops-1234-00002.csv.gz']
+
 Successfully transformed manifest file: CUR/doitintl-awsops-1234/20220801-20220901/20230825T094827Z/doitintl-awsops-1234-Manifest.json
+
 Processing billing/test1234-cost-report/20220801-20220901/test1234-cost-report-Manifest.json
+
 Updated Report Keys: ['CUR/doitintl-awsops-1234/20220801-20220901/20230825T094827Z/doitintl-awsops-1234-00001.csv.gz', 'CUR/doitintl-awsops-1234/20220801-20220901/20230825T094827Z/doitintl-awsops-1234-00002.csv.gz']
+
 Successfully transformed manifest file: CUR/doitintl-awsops-1234/20220801-20220901/doitintl-awsops-1234-Manifest.json
 
 
-Changing the csv file names
+**Changing the csv file names**
+
 Processing billing/test1234-cost-report/20230801-20230901/20230901T104132Z/test1234-cost-report-00002.csv.gz
 to: CUR/doitintl-awsops-1234/20230801-20230901/20230901T104132Z/doitintl-awsops-1234-00002.csv.gz
+
 Processing billing/test1234-cost-report/20230801-20230901/20230901T104132Z/test1234-cost-report-00001.csv.gz
 to: CUR/doitintl-awsops-1234/20230801-20230901/20230901T104132Z/doitintl-awsops-1234-00001.csv.gz
+
 Processing billing/test1234-cost-report/20230801-20230901/20230901T104132Z/test1234-cost-report-00002.csv.gz
 to: CUR/doitintl-awsops-1234/20230801-20230901/20230901T104132Z/doitintl-awsops-1234-00002.csv.gz
+
 Done
 
 
