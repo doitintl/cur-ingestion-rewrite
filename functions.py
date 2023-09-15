@@ -69,6 +69,7 @@ class Aws:
             destination_csv_location = destination_csv_location.replace(source_cur_path_remove, '')
 
         self.write_file_to_s3(destination_s3_bucket, destination_csv_location, source_csv_gzipped)
+        print(f'to: {destination_csv_location}')
         return True
 
     def rewrite_aws_manifest_file(self, manifest_file: str, destination_report_name: str, source_cur_path_remove: str, source_cur_path: str, destination_cur_path: str, source_bucket: str, destination_bucket: str):
